@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourTranscriber - AI Transcriptiedienst</title>
-    <meta name="title" content="Jouw Online Audio Transcriber - AI Transcriptiedienst">
-    <meta name="description" content="Upload je audio bestanden en ontvang nauwkeurige transcripties binnen enkele minuten. Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer. Slechts €0,60 per minuut!">
-    <meta name="keywords" content="AI transcriptie, audio naar tekst, betaalbare transcriptie, Nederlandse transcriptie, Engelse transcriptie, Duitse transcriptie, Spaanse transcriptie">
-    <meta name="author" content="Jouw Online Audio Transcriber">
+    <title>YourTranscriber - AI Powered Transcription Service</title>
+    <meta name="title" content="YourTranscriber - AI Powered Transcription Service">
+    <meta name="description" content="Upload your audio files and receive accurate transcriptions in minutes. Available in Dutch, English, German, Spanish, and more. Only €0,60 per minute!">
+    <meta name="keywords" content="AI transcription, audio to text, affordable transcription, Dutch transcription, English transcription, German transcription, Spanish transcription">
+    <meta name="author" content="YourTranscriber">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
@@ -121,45 +121,45 @@
 <body>
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">Over ons</a>
-    <a href="terms.html">Algemene voorwaarden</a>
+    <a href="about.html">Über uns</a>
+    <a href="terms.html">Allgemeine Geschäftsbedingungen</a>
 </nav>
 
 <form id="uploadForm" enctype="multipart/form-data" itemscope itemtype="http://schema.org/Service">
     <meta itemprop="serviceType" content="Transcription Service">
     <div itemprop="provider" itemscope itemtype="http://schema.org/Organization">
         <meta itemprop="name" content="Evert van Noort">
-        <meta itemprop="url" content="https://www.transcribeforme.app">
+        <meta itemprop="url" content="https://www.evertvannoort.com/AI/index">
     </div>
 
-    <h1 itemprop="name">Jouw Online Audio Transcriber</h1>
-    <h4 itemprop="description">Upload je audio bestanden en krijg nauwkeurige transcripties binnen enkele minuten! Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer, voor slechts €0,60 per minuut!</h4>
+    <h1 itemprop="name">Your Online Audio Transcriber</h1>
+    <h4 itemprop="description">Upload your audio files and get excellent results in minutes! Transcriptions are available in Dutch, English, German, Spanish, and more, for only €0,60 per minute!</h4>
 
     <div class="form-group">
-        <input type="email" name="email" class="form-control" placeholder="Email adres" required>
+        <input type="email" name="email" class="form-control" placeholder="Email address" required>
     </div>
     <div class="form-group row">
         <div class="col-8">
-            <button type="button" class="btn btn-primary btn-block uploadButton">Upload bestand</button>
+            <button type="button" class="btn btn-primary btn-block uploadButton">Upload file</button>
             <input type="file" name="file[]" class="form-control-file fileInput" style="display: none;" required>
         </div>
         <div class="col-4">
             <select name="languages" class="form-control" required>
-                <option value="">Detecteer</option>
-                <option value="dutch">Nederlands</option>
-                <option value="english">Engels</option>
-                <option value="spanish">Spaans</option>
-                <option value="german">Duits</option>
+                <option value="">Detect</option>
+                <option value="dutch">Dutch</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="german">German</option>
             </select>
         </div>
     </div>
     <div class="form-check">
         <input type="checkbox" class="form-check-input" id="testCheck" name="test">
-        <h2>Test, een gratis transcriptie van de eerste 20 seconden</h2>
+        <h2>Test, get a free transcription of the first 20 seconds</h2>
         <label class="form-check-label" for="testCheck"></label>
     </div>
-    <button type="submit" class="btn btn-primary btn-block" id="submitButton">Betaal en Verwerk</button>
-    <small>Door op de knop te klikken, gaat u akkoord met het betalen en verwerken. U accepteert de <a href="https://www.evertvannoort.com/AI/terms.html" target="_blank" style="color: #08306b; text-decoration: underline;">algemene voorwaarden</a>. TL;DR: We slaan uw bestanden of e-mailadres niet op en u kunt geen terugbetaling krijgen als u niet eerst test.</small>
+    <button type="submit" class="btn btn-primary btn-block" id="submitButton">Pay and Process</button>
+    <small>By clicking the button you agree to pay and process. You accept the <a href="https://www.evertvannoort.com/AI/terms.html" target="_blank" style="color: #08306b; text-decoration: underline;">terms and conditions</a>. TL;DR: We don't save your files or email address and you can't get a refund if you don't test first.</small>
     <div id="errorDisplay" style="color: red; margin-top: 10px;"></div>
 </form>
 
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const newFileButton = document.createElement('button');
             newFileButton.type = 'button';
             newFileButton.classList.add('btn', 'btn-primary', 'btn-block', 'uploadButton');
-            newFileButton.textContent = 'Upload bestand';
+            newFileButton.textContent = 'Upload file';
 
             const newFileInput = document.createElement('input');
             newFileInput.type = 'file';
@@ -217,27 +217,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const option1 = document.createElement('option');
             option1.value = '';
-            option1.textContent = 'Detecteer';
+            option1.textContent = 'Detect';
             newSelect.appendChild(option1);
 
             const option2 = document.createElement('option');
             option2.value = 'dutch';
-            option2.textContent = 'Nederlands';
+            option2.textContent = 'Dutch';
             newSelect.appendChild(option2);
 
             const option3 = document.createElement('option');
             option3.value = 'english';
-            option3.textContent = 'Engels';
+            option3.textContent = 'English';
             newSelect.appendChild(option3);
 
             const option4 = document.createElement('option');
             option4.value = 'spanish';
-            option4.textContent = 'Spaans';
+            option4.textContent = 'Spanish';
             newSelect.appendChild(option4);
 
             const option5 = document.createElement('option');
             option5.value = 'german';
-            option5.textContent = 'Duits';
+            option5.textContent = 'German';
             newSelect.appendChild(option5);
 
             selectDiv.appendChild(newSelect);
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             console.error("Error during file upload and payment initiation:", error);
             errorDisplay.textContent = error.message; // Display error message on the page
-            submitButton.textContent = 'Betaal en Verwerk'; // Reset button text if error
+            submitButton.textContent = 'Pay and Process'; // Reset button text if error
             submitButton.disabled = false; // Re-enable button
         }
     });
