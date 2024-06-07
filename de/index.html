@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="de" itemscope itemtype="http://schema.org/Service">
+<html lang="en" itemscope itemtype="http://schema.org/Service">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourTranscriber - KI-gestützter Transkriptionsdienst</title>
+    <title>TranscribeForMe - KI-gestützter Transkriptionsdienst</title>
     <meta name="title" content="YourTranscriber - KI-gestützter Transkriptionsdienst">
     <meta name="description" content="Laden Sie Ihre Audiodateien hoch und erhalten Sie in wenigen Minuten genaue Transkriptionen. Verfügbar in Niederländisch, Englisch, Deutsch, Spanisch und mehr. Nur €0,60 pro Minute!">
     <meta name="keywords" content="KI Transkription, Audio zu Text, erschwingliche Transkription, niederländische Transkription, englische Transkription, deutsche Transkription, spanische Transkription">
-    <meta name="author" content="YourTranscriber">
+    <meta name="author" content="TranscribeForMe">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
@@ -15,6 +15,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+    <link rel="icon" href="../Favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../Favicon/site.webmanifest">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "TranscribeForMe - TranscribeForMe ",
+        "description": "Laden Sie Ihre Audiodateien hoch und erhalten Sie in wenigen Minuten genaue Transkriptionen. Verfügbar in Niederländisch, Englisch, Deutsch, Spanisch und mehr. Nur €0,60 pro Minute!",
+        "url": "https://www.transcribeforme.app/index.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "TranscribeForMe",
+            "url": "https://www.transcribeforme.app",
+            "sameAs": []
+        }
+    }
+    </script>
     <style>
         body {
             font-family: "Ubuntu Mono", monospace;
@@ -120,7 +138,7 @@
 </head>
 <body>
 <nav>
-    <a href="index.html">Startseite</a>
+    <a href="index.html">Home</a>
     <a href="about.html">Über uns</a>
     <a href="terms.html">AGB</a>
 </nav>
@@ -128,15 +146,15 @@
 <form id="uploadForm" enctype="multipart/form-data" itemscope itemtype="http://schema.org/Service">
     <meta itemprop="serviceType" content="Transcription Service">
     <div itemprop="provider" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="Evert van Noort">
-        <meta itemprop="url" content="https://www.transcribeforme.app/de">
+        <meta itemprop="name" content="TranscribeForMe">
+        <meta itemprop="url" content="https://www.transcribeforme.app">
     </div>
 
-    <h1 itemprop="name">Ihr Online-Audio-Transcriber</h1>
-    <h4 itemprop="description">Laden Sie Ihre Audiodateien hoch und erhalten Sie in wenigen Minuten genaue Transkriptionen! Transkriptionen sind in Niederländisch, Englisch, Deutsch, Spanisch und mehr verfügbar, für nur €0,60 pro Minute!</h4>
+    <h1 itemprop="name">TranscribeForMe </h1>
+    <h4 itemprop="description">Laden Sie Ihre Audiodateien hoch und erhalten Sie in wenigen Minuten genaue Transkriptionen in Ihre Mailbox! Transkriptionen sind in Niederländisch, Englisch, Deutsch, Spanisch und mehr verfügbar, für nur €0,60 pro Minute!</h4>
 
     <div class="form-group">
-        <input type="email" name="email" class="form-control" placeholder="E-Mail-Adresse" required>
+        <input type="email" name="email" class="form-control" placeholder="E-mail-Addresse" required>
     </div>
     <div class="form-group row">
         <div class="col-8">
@@ -144,7 +162,7 @@
             <input type="file" name="file[]" class="form-control-file fileInput" style="display: none;" required>
         </div>
         <div class="col-4">
-            <select name="languages" class="form-control language-select">
+            <select name="languages" class="form-control" required>
                 <option value="">Erkennen</option>
                 <option value="dutch">Niederländisch</option>
                 <option value="english">Englisch</option>
@@ -159,7 +177,7 @@
         <label class="form-check-label" for="testCheck"></label>
     </div>
     <button type="submit" class="btn btn-primary btn-block" id="submitButton">Bezahlen und Verarbeiten</button>
-    <small>Durch Klicken auf die Schaltfläche stimmen Sie zu, zu bezahlen und zu verarbeiten. Sie akzeptieren die <a href="https://www.evertvannoort.com/AI/terms.html" target="_blank" style="color: #08306b; text-decoration: underline;">Allgemeinen Geschäftsbedingungen</a>. TL;DR: Wir speichern Ihre Dateien oder E-Mail-Adresse nicht und Sie können keine Rückerstattung erhalten, wenn Sie nicht zuerst testen.</small>
+    <small>Durch Klicken auf die Schaltfläche stimmen Sie zu, zu bezahlen und zu verarbeiten. Sie akzeptieren die <a href="terms.html" target="_blank" style="color: #08306b; text-decoration: underline;">AGB</a>. TL;DR: Wir speichern Ihre Dateien oder E-Mail-Adresse nicht und Sie können keine Rückerstattung erhalten, wenn Sie nicht zuerst testen.</small>
     <div id="errorDisplay" style="color: red; margin-top: 10px;"></div>
 </form>
 
@@ -197,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const newFileButton = document.createElement('button');
             newFileButton.type = 'button';
             newFileButton.classList.add('btn', 'btn-primary', 'btn-block', 'uploadButton');
-            newFileButton.textContent = 'Datei hochladen';
+            newFileButton.textContent = 'Upload file';
 
             const newFileInput = document.createElement('input');
             newFileInput.type = 'file';
