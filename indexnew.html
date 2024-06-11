@@ -19,7 +19,7 @@
     <link rel="manifest" href="https://transcribeforme.app/Favicon/site.webmanifest">
 </head>
 <body>
-<nav>
+<nav class="navbar">
     <a href="https://transcribeforme.app/index.html" id="home">Home</a>
     <a href="https://transcribeforme.app/about.html" id="about">Over ons</a>
     <a href="https://transcribeforme.app/terms.html" id="terms_link">Algemene voorwaarden</a>
@@ -38,14 +38,11 @@
     <div class="form-group">
         <input type="email" name="email" class="form-control input" id="email" placeholder="Email adres" required="">
     </div>
-    <div class="form-group row d-flex align-items-top">
-    <!-- <div class= "flex">     -->
+    <div class="form-group row d-flex align-items-center">
         <div class="col-8 d-flex align-items-center">
             <button type="button" class="btn btn-primary btn-block uploadButton" id="upload_button">Upload bestand</button>
             <input type="file" name="file[]" class="form-control-file fileInput input" style="display: none;" required="">
-        <!-- </div> -->
-        <!-- <div class="col-4"> -->
-            <select name="languages" class="form-control language-select" required="">
+            <select name="languages" class="form-control language-select ml-3" required="">
                 <option value="">Detecteer</option>
                 <option value="dutch">Nederlands</option>
                 <option value="english">Engels</option>
@@ -75,13 +72,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const language = navigator.language || navigator.userLanguage;
     const lang = language.split('-')[0]; // Get the language part, e.g., 'en' from 'en-US'
-    // const lang = 'de';
     loadTranslation('de');
 
     function loadTranslation(lang) {
         fetch(`./${lang}.txt`)
-        // fetch(`./de.txt`)
-
             .then(response => response.text())
             .then(data => {
                 const translations = parseTranslation(data);
