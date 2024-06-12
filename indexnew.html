@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" itemscope="" itemtype="http://schema.org/Service">
+<html lang="en" itemscope itemtype="http://schema.org/Service">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TranscribeForMe - AI Transcriptiedienst</title>
-    <meta name="title" content="TranscribeForMe  - AI Transcriptiedienst">
-    <meta name="description" content="Upload je audio bestanden en ontvang nauwkeurige transcripties binnen enkele minuten. Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer. Slechts €0,60 per minuut!">
-    <meta name="keywords" content="AI transcriptie, audio naar tekst, betaalbare transcriptie, Nederlandse transcriptie, Engelse transcriptie, Duitse transcriptie, Spaanse transcriptie">
-    <meta name="author" content="TranscribeForMe ">
+    <title id="pageTitle">TranscribeForMe - AI Transcription Service</title>
+    <meta name="title" content="TranscribeForMe - AI Transcription Service" id="metaTitle">
+    <meta name="description" content="Upload your audio files and receive accurate transcriptions within minutes. Available in Dutch, English, German, Spanish, and more. Only €0.60 per minute!" id="metaDescription">
+    <meta name="keywords" content="AI transcription, audio to text, affordable transcription, Dutch transcription, English transcription, German transcription, Spanish transcription" id="metaKeywords">
+    <meta name="author" content="TranscribeForMe">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
@@ -18,71 +18,54 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://transcribeforme.app/Favicon/apple-touch-icon.png">
     <link rel="icon" href="https://transcribeforme.app/Favicon/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="https://transcribeforme.app/Favicon/site.webmanifest">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "TranscribeForMe - TranscribeForMe ",
-        "description": "Upload je audio bestanden en ontvang nauwkeurige transcripties binnen enkele minuten. Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer. Slechts €0,60 per minuut!",
-        "url": "https://www.transcribeforme.app/index.html",
-        "publisher": {
-            "@type": "Organization",
-            "name": "TranscribeForMe",
-            "url": "https://www.transcribeforme.app",
-            "sameAs": []
-        }
-    }
-    </script>
+
+    <!-- hreflang tags for language versions -->
+    <link rel="alternate" href="https://transcribeforme.app/index.html?lang=en" hreflang="en">
+    <link rel="alternate" href="https://transcribeforme.app/index.html?lang=nl" hreflang="nl">
+    <link rel="alternate" href="https://transcribeforme.app/index.html?lang=de" hreflang="de">
 </head>
 <body>
 <nav>
-    <a href="https://transcribeforme.app/index.html">Home</a>
-    <a href="https://transcribeforme.app/about.html">Over ons</a>
-    <a href="https://transcribeforme.app/terms.html">Algemene voorwaarden</a>
+    <a href="https://transcribeforme.app/index.html" id="navHome">Home</a>
+    <a href="https://transcribeforme.app/about.html" id="navAbout">About Us</a>
+    <a href="https://transcribeforme.app/terms.html" id="navTerms">Terms and Conditions</a>
 </nav>
 
-<form id="uploadForm" enctype="multipart/form-data" itemscope="" itemtype="http://schema.org/Service">
+<form id="uploadForm" enctype="multipart/form-data" itemscope itemtype="http://schema.org/Service">
     <meta itemprop="serviceType" content="Transcription Service">
-    <div itemprop="provider" itemscope="" itemtype="http://schema.org/Organization">
+    <div itemprop="provider" itemscope itemtype="http://schema.org/Organization">
         <meta itemprop="name" content="Evert van Noort">
         <meta itemprop="url" content="https://www.transcribeforme.app">
     </div>
 
-    <h1 itemprop="name">TranscribeForMe </h1>
-    <h4 itemprop="description">Upload je audio bestanden en krijg nauwkeurige transcripties binnen enkele minuten in je mailbox! Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer, voor slechts €0,60 per minuut!</h4>
+    <h1 itemprop="name" id="formTitle">TranscribeForMe</h1>
+    <h4 itemprop="description" id="formDescription">Upload your audio files and receive accurate transcriptions within minutes in your mailbox! Available in Dutch, English, German, Spanish, and more, for only €0.60 per minute!</h4>
 
     <div class="form-group">
-        <input type="email" name="email" class="form-control" placeholder="Email adres" required="">
+        <input type="email" name="email" class="form-control" placeholder="Email address" required id="emailPlaceholder">
     </div>
     <div class="form-group row">
         <div class="col-8">
-            <button type="button" class="btn btn-primary btn-block uploadButton">Upload bestand</button>
-            <input type="file" name="file[]" class="form-control-file fileInput" style="display: none;" required="">
+            <button type="button" class="btn btn-primary btn-block uploadButton" id="uploadButton">Upload file</button>
+            <input type="file" name="file[]" class="form-control-file fileInput" style="display: none;" required>
         </div>
         <div class="col-4">
-            <select name="languages" class="form-control" required="">
-                <option value="">Detecteer</option>
-                <option value="dutch">Nederlands</option>
-                <option value="english">Engels</option>
-                <option value="spanish">Spaans</option>
-                <option value="german">Duits</option>
+            <select name="languages" class="form-control" required>
+                <option value="None" id="languageDetect">Detect</option>
+                <option value="dutch" id="langDutch">Dutch</option>
+                <option value="english" id="langEnglish">English</option>
+                <option value="spanish" id="langSpanish">Spanish</option>
+                <option value="german" id="langGerman">German</option>
             </select>
         </div>
     </div>
-<!--     <label class="container">
-        <input checked="unchecked" type="checkbox">
-        <div class="checkmark">
-        <h2>Test, een gratis transcriptie van de eerste 20 seconden</h2>
-    </div> -->
-    <!-- </label> -->
     <div class="form-check">
         <input type="checkbox" class="form-check-input" id="testCheck" name="test">
-        <!-- <input type="container" class="checkmark" id="testCheck" name="test"> -->
-        <h2>Test, een gratis transcriptie van de eerste 20 seconden</h2>
+        <h2 id="testTranscription">Test, a free transcription of the first 20 seconds</h2>
         <label class="form-check-label" for="testCheck"></label>
     </div>
-    <button type="submit" class="btn btn-primary btn-block" id="submitButton">Betaal en Verwerk</button>
-    <small>Door op de knop te klikken, gaat u akkoord met het betalen en verwerken. U accepteert de <a href="https://www.evertvannoort.com/AI/terms.html" target="_blank" style="color: #08306b; text-decoration: underline;">algemene voorwaarden</a>. TL;DR: We slaan uw bestanden of e-mailadres niet op en u kunt geen terugbetaling krijgen als u niet eerst test.</small>
+    <button type="submit" class="btn btn-primary btn-block" id="submitButton">Pay and Process</button>
+    <small id="acceptTerms">By clicking the button, you agree to pay and process. You accept the <a href="https://www.evertvannoort.com/AI/terms.html" target="_blank" style="color: #08306b; text-decoration: underline;" id="termsLink">general terms and conditions</a>. TL;DR: We do not store your files or email address and you cannot get a refund if you do not test first.</small>
     <div id="errorDisplay" style="color: red; margin-top: 10px;"></div>
 </form>
 
@@ -113,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const newInputGroup = document.createElement('div');
-            newInputGroup.classList.add('form-group', 'row'); // Use Bootstrap's row for alignment
+            newInputGroup.classList.add('form-group', 'row');
 
             const fileInputDiv = document.createElement('div');
             fileInputDiv.classList.add('col-8');
@@ -138,30 +121,20 @@ document.addEventListener('DOMContentLoaded', function() {
             newSelect.classList.add('form-control');
             newSelect.required = false;
 
-            const option1 = document.createElement('option');
-            option1.value = '';
-            option1.textContent = 'Detecteer';
-            newSelect.appendChild(option1);
+            const options = [
+                { value: 'None', text: 'Detect' },
+                { value: 'dutch', text: 'Dutch' },
+                { value: 'english', text: 'English' },
+                { value: 'spanish', text: 'Spanish' },
+                { value: 'german', text: 'German' },
+            ];
 
-            const option2 = document.createElement('option');
-            option2.value = 'dutch';
-            option2.textContent = 'Nederlands';
-            newSelect.appendChild(option2);
-
-            const option3 = document.createElement('option');
-            option3.value = 'english';
-            option3.textContent = 'Engels';
-            newSelect.appendChild(option3);
-
-            const option4 = document.createElement('option');
-            option4.value = 'spanish';
-            option4.textContent = 'Spaans';
-            newSelect.appendChild(option4);
-
-            const option5 = document.createElement('option');
-            option5.value = 'german';
-            option5.textContent = 'Duits';
-            newSelect.appendChild(option5);
+            options.forEach(opt => {
+                const option = document.createElement('option');
+                option.value = opt.value;
+                option.textContent = opt.text;
+                newSelect.appendChild(option);
+            });
 
             selectDiv.appendChild(newSelect);
 
@@ -174,16 +147,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     uploadForm.addEventListener('submit', async function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        submitButton.textContent = 'Uploading and determining price...'; // Change button text
-        submitButton.disabled = true; // Optionally disable button to prevent multiple submissions
-        errorDisplay.textContent = ''; // Clear any previous errors
+        event.preventDefault();
+        submitButton.textContent = 'Uploading and determining price...';
+        submitButton.disabled = true;
+        errorDisplay.textContent = '';
 
         const formData = new FormData(this);
 
-        // Collect all files
         const fileInputs = this.querySelectorAll('input[type="file"]');
-        fileInputs.forEach((input) => {
+        fileInputs.forEach(input => {
             if (input.files) {
                 Array.from(input.files).forEach(file => {
                     formData.append('files', file);
@@ -191,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Append the 'test' field based on checkbox state
         const testCheckbox = document.getElementById('testCheck');
         formData.append('test', testCheckbox.checked ? 'true' : 'false');
 
@@ -203,10 +174,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const uploadData = await uploadResponse.json();
             if (uploadResponse.ok) {
-                const paymentId = uploadData.paymentId; // Retrieve payment ID from the response
+                const paymentId = uploadData.paymentId;
 
                 if (testCheckbox.checked) {
-                    // In test mode, redirect directly to success page
                     window.location.href = 'success.html';
                 } else {
                     const paymentResponse = await fetch(`${backendUrl}/create-payment/${paymentId}`, {
@@ -216,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                     const paymentData = await paymentResponse.json();
                     if (paymentResponse.ok && paymentData.checkoutUrl) {
-                        window.location.href = paymentData.checkoutUrl; // Redirect to the payment page
+                        window.location.href = paymentData.checkoutUrl;
                     } else {
                         throw new Error(paymentData.message || 'Failed to initiate payment');
                     }
@@ -226,12 +196,49 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } catch (error) {
             console.error("Error during file upload and payment initiation:", error);
-            errorDisplay.textContent = error.message; // Display error message on the page
-            submitButton.textContent = 'Betaal en Verwerk'; // Reset button text if error
-            submitButton.disabled = false; // Re-enable button
+            errorDisplay.textContent = error.message;
+            submitButton.textContent = 'Pay and Process';
+            submitButton.disabled = false;
         }
     });
 });
+
+function loadLanguage(lang) {
+    fetch('./lang.json')
+        .then(response => response.json())
+        .then(data => {
+            const strings = data[lang];
+
+            document.title = strings.title;
+            document.getElementById('pageTitle').textContent = strings.title;
+            document.getElementById('metaTitle').setAttribute('content', strings.title);
+            document.getElementById('metaDescription').setAttribute('content', strings.description);
+            document.getElementById('metaKeywords').setAttribute('content', strings.keywords);
+            document.getElementById('formTitle').textContent = strings.title;
+            document.getElementById('formDescription').textContent = strings.description;
+            document.getElementById('emailPlaceholder').setAttribute('placeholder', strings.email_placeholder);
+            document.getElementById('uploadButton').textContent = strings.upload;
+            document.getElementById('languageDetect').textContent = strings.language_detect;
+            document.getElementById('langDutch').textContent = strings.languages.dutch;
+            document.getElementById('langEnglish').textContent = strings.languages.english;
+            document.getElementById('langSpanish').textContent = strings.languages.spanish;
+            document.getElementById('langGerman').textContent = strings.languages.german;
+            document.getElementById('testTranscription').textContent = strings.test_transcription;
+            document.getElementById('submitButton').textContent = strings.submit;
+            document.getElementById('acceptTerms').innerHTML = `${strings.accept_terms} <a href="https://www.evertvannoort.com/AI/terms.html" target="_blank" style="color: #08306b; text-decoration: underline;" id="termsLink">${strings.terms}</a>. ${strings.tldr}`;
+            
+            // Update navigation menu text
+            document.getElementById('navHome').textContent = strings.menu.home;
+            document.getElementById('navAbout').textContent = strings.menu.about;
+            document.getElementById('navTerms').textContent = strings.menu.terms;
+        })
+        .catch(error => console.error('Error loading language file:', error));
+}
+
+// Detect language from URL and load it
+const urlParams = new URLSearchParams(window.location.search);
+const lang = urlParams.get('lang') || 'en';
+loadLanguage(lang);
 </script>
 </body>
 </html>

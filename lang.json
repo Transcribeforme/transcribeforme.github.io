@@ -1,0 +1,74 @@
+{
+    "en": {
+        "title": "TranscribeForMe - AI Transcription Service",
+        "description": "Upload your audio files and receive accurate transcriptions within minutes. Available in Dutch, English, German, Spanish, and more. Only €0.60 per minute!",
+        "keywords": "AI transcription, audio to text, affordable transcription, Dutch transcription, English transcription, German transcription, Spanish transcription",
+        "upload": "Upload file",
+        "email_placeholder": "Email address",
+        "language_detect": "Detect",
+        "languages": {
+            "dutch": "Dutch",
+            "english": "English",
+            "spanish": "Spanish",
+            "german": "German"
+        },
+        "test_transcription": "Test, a free transcription of the first 20 seconds",
+        "submit": "Pay and Process",
+        "terms": "general terms and conditions",
+        "accept_terms": "By clicking the button, you agree to pay and process. You accept the ",
+        "tldr": "TL;DR: We do not store your files or email address and you cannot get a refund if you do not test first.",
+        "menu": {
+            "home": "Home",
+            "about": "About Us",
+            "terms": "Terms and Conditions"
+        }
+    },
+    "nl": {
+        "title": "TranscribeForMe - AI Transcriptiedienst",
+        "description": "Upload je audio bestanden en ontvang nauwkeurige transcripties binnen enkele minuten. Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer. Slechts €0,60 per minuut!",
+        "keywords": "AI transcriptie, audio naar tekst, betaalbare transcriptie, Nederlandse transcriptie, Engelse transcriptie, Duitse transcriptie, Spaanse transcriptie",
+        "upload": "Upload bestand",
+        "email_placeholder": "Email adres",
+        "language_detect": "Detecteer",
+        "languages": {
+            "dutch": "Nederlands",
+            "english": "Engels",
+            "spanish": "Spaans",
+            "german": "Duits"
+        },
+        "test_transcription": "Test, een gratis transcriptie van de eerste 20 seconden",
+        "submit": "Betaal en Verwerk",
+        "terms": "algemene voorwaarden",
+        "accept_terms": "Door op de knop te klikken, gaat u akkoord met het betalen en verwerken. U accepteert de ",
+        "tldr": "TL;DR: We slaan uw bestanden of e-mailadres niet op en u kunt geen terugbetaling krijgen als u niet eerst test.",
+        "menu": {
+            "home": "Home",
+            "about": "Over ons",
+            "terms": "Algemene voorwaarden"
+        }
+    },
+    "de": {
+        "title": "TranscribeForMe - AI Transkriptionsdienst",
+        "description": "Laden Sie Ihre Audiodateien hoch und erhalten Sie innerhalb von Minuten genaue Transkriptionen. Verfügbar in Niederländisch, Englisch, Deutsch, Spanisch und mehr. Nur 0,60 € pro Minute!",
+        "keywords": "AI Transkription, Audio zu Text, erschwingliche Transkription, niederländische Transkription, englische Transkription, deutsche Transkription, spanische Transkription",
+        "upload": "Datei hochladen",
+        "email_placeholder": "E-Mail-Adresse",
+        "language_detect": "Erkennen",
+        "languages": {
+            "dutch": "Niederländisch",
+            "english": "Englisch",
+            "spanish": "Spanisch",
+            "german": "Deutsch"
+        },
+        "test_transcription": "Testen, eine kostenlose Transkription der ersten 20 Sekunden",
+        "submit": "Bezahlen und Verarbeiten",
+        "terms": "Allgemeine Geschäftsbedingungen",
+        "accept_terms": "Durch Klicken auf die Schaltfläche stimmen Sie zu, zu bezahlen und zu verarbeiten. Sie akzeptieren die ",
+        "tldr": "TL;DR: Wir speichern Ihre Dateien oder E-Mail-Adresse nicht und Sie können keine Rückerstattung erhalten, wenn Sie nicht zuerst testen.",
+        "menu": {
+            "home": "Startseite",
+            "about": "Über uns",
+            "terms": "Allgemeine Geschäftsbedingungen"
+        }
+    }
+}
