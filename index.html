@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Service">
+<html lang="en" itemscope="" itemtype="http://schema.org/Service">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TranscribeForMe - AI Transcriptiedienst</title>
-    <meta name="title" content="TranscribeForMe  - AI Transcriptiedienst">
-    <meta name="description" content="Upload je audio bestanden en ontvang nauwkeurige transcripties binnen enkele minuten. Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer. Slechts €0,60 per minuut!">
-    <meta name="keywords" content="AI transcriptie, audio naar tekst, betaalbare transcriptie, Nederlandse transcriptie, Engelse transcriptie, Duitse transcriptie, Spaanse transcriptie">
-    <meta name="author" content="TranscribeForMe ">
+    <title id="pageTitle">TranscribeForMe - AI Transcriptiedienst</title>
+    <meta name="title" content="TranscribeForMe - AI Transcriptiedienst" id="metaTitle">
+    <meta name="description" content="Upload je audio bestanden en ontvang nauwkeurige transcripties binnen enkele minuten. Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer. Slechts €0,60 per minuut!" id="metaDescription">
+    <meta name="keywords" content="AI transcriptie, audio naar tekst, betaalbare transcriptie, Nederlandse transcriptie, Engelse transcriptie, Duitse transcriptie, Spaanse transcriptie" id="metaKeywords">
+    <meta name="author" content="TranscribeForMe">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
-    <link rel="icon" href="./Favicon/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="./Favicon/site.webmanifest">
+    <link href="./TranscribeForMe - AI Transcriptiedienst_files/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://transcribeforme.app/Favicon/apple-touch-icon.png">
+    <link rel="icon" href="https://transcribeforme.app/Favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="https://transcribeforme.app/Favicon/site.webmanifest">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "TranscribeForMe - TranscribeForMe ",
+        "name": "TranscribeForMe - TranscribeForMe",
         "description": "Upload je audio bestanden en ontvang nauwkeurige transcripties binnen enkele minuten. Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer. Slechts €0,60 per minuut!",
         "url": "https://www.transcribeforme.app/index.html",
         "publisher": {
@@ -33,161 +33,108 @@
         }
     }
     </script>
-
-    <style>
-        body {
-            font-family: "Ubuntu Mono", monospace;
-            font-weight: 400;
-            font-style: normal;
-            background: linear-gradient(135deg, #6baed6, #bdd7e7);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        nav {
-            position: absolute;
-            top: 25px;
-            right: 50px;
-        }
-        nav a {
-            font-size: 1em;
-            color: #08306b;
-            margin-left: 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        form {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 25px;
-            border-radius: 50px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 2em;
-            text-align: center;
-            color: #08306b;
-            margin-bottom: 15px;
-        }
-        h2 {
-            font-size: 1em;
-            text-align: left;
-            color: #08306b;
-            margin-bottom: 0px;
-        }
-        h4 {
-            font-size: 1em;
-            text-align: left;
-            color: #08306b;
-            margin-bottom: 15px;
-        }
-        text {
-            font-size: 1em;
-            text-align: left;
-            color: #08306b;
-            margin-bottom: 15px;
-        }
-        small {
-            font-size: 0.875em;
-            text-align: left;
-            color: #08306b;
-            display: block;
-            margin-bottom: 15px;
-            margin-top: 10px;
-        }
-        .form-check {
-            margin-top: 20px;
-        }
-        .form-check-label, .form-check-label small {
-            color: #08306b;
-        }
-        .form-control {
-            border-radius: 50px;
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-        .language-select {
-            margin-top: 10px;
-        }
-        .btn-primary {
-            background-color: #3182bd;
-            border-color: #3182bd;
-            border-radius: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            white-space: nowrap;
-        }
-        .btn-primary:hover {
-            background-color: #08519c;
-            border-color: #08519c;
-        }
-        .btn-file-label {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            white-space: nowrap;
-        }
-    </style>
 </head>
 <body>
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">Over ons</a>
-    <a href="terms.html">Algemene voorwaarden</a>
+    <a href="index.html" id="navHome">Home</a>
+    <a href="about.html" id="navAbout">Over ons</a>
+    <a href="terms.html" id="navTerms">Algemene voorwaarden</a>
 </nav>
 
-<form id="uploadForm" enctype="multipart/form-data" itemscope itemtype="http://schema.org/Service">
+<form id="uploadForm" enctype="multipart/form-data" itemscope="" itemtype="http://schema.org/Service">
     <meta itemprop="serviceType" content="Transcription Service">
-    <div itemprop="provider" itemscope itemtype="http://schema.org/Organization">
+    <div itemprop="provider" itemscope="" itemtype="http://schema.org/Organization">
         <meta itemprop="name" content="Evert van Noort">
         <meta itemprop="url" content="https://www.transcribeforme.app">
     </div>
 
-    <h1 itemprop="name">TranscribeForMe </h1>
-    <h4 itemprop="description">Upload je audio bestanden en krijg nauwkeurige transcripties binnen enkele minuten in je mailbox! Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer, voor slechts €0,60 per minuut!</h4>
+    <h1 itemprop="name" id="formTitle">TranscribeForMe</h1>
+    <h4 itemprop="description" id="formDescription">Upload je audio bestanden en krijg nauwkeurige transcripties binnen enkele minuten in je mailbox! Beschikbaar in het Nederlands, Engels, Duits, Spaans en meer, voor slechts €0,60 per minuut!</h4>
 
     <div class="form-group">
-        <input type="email" name="email" class="form-control" placeholder="Email adres" required>
+        <input type="email" name="email" class="form-control" placeholder="Email adres" required="" id="emailPlaceholder">
     </div>
     <div class="form-group row">
         <div class="col-8">
-            <button type="button" class="btn btn-primary btn-block uploadButton">Upload bestand</button>
-            <input type="file" name="file[]" class="form-control-file fileInput" style="display: none;" required>
+            <button type="button" class="btn btn-primary btn-block uploadButton" id="uploadButton">Upload bestand</button>
+            <input type="file" name="file[]" class="form-control-file fileInput" style="display: none;" required="">
         </div>
         <div class="col-4">
-            <select name="languages" class="form-control" required>
-                <option value="">Detecteer</option>
-                <option value="dutch">Nederlands</option>
-                <option value="english">Engels</option>
-                <option value="spanish">Spaans</option>
-                <option value="german">Duits</option>
+            <select name="languages" class="form-control" required="" id="languageSelect">
+                <option value="None" id="languageDetect">Detecteer</option>
+                <option value="dutch" id="langDutch">Nederlands</option>
+                <option value="english" id="langEnglish">Engels</option>
+                <option value="spanish" id="langSpanish">Spaans</option>
+                <option value="german" id="langGerman">Duits</option>
             </select>
         </div>
     </div>
     <div class="form-check">
         <input type="checkbox" class="form-check-input" id="testCheck" name="test">
-        <h2>Test, een gratis transcriptie van de eerste 20 seconden</h2>
+        <h2 id="testTranscription">Test, een gratis transcriptie van de eerste 20 seconden</h2>
         <label class="form-check-label" for="testCheck"></label>
     </div>
     <button type="submit" class="btn btn-primary btn-block" id="submitButton">Betaal en Verwerk</button>
-    <small>Door op de knop te klikken, gaat u akkoord met het betalen en verwerken. U accepteert de <a href="https://www.evertvannoort.com/AI/terms.html" target="_blank" style="color: #08306b; text-decoration: underline;">algemene voorwaarden</a>. TL;DR: We slaan uw bestanden of e-mailadres niet op en u kunt geen terugbetaling krijgen als u niet eerst test.</small>
+    <small id="acceptTerms">Door op de knop te klikken, gaat u akkoord met het betalen en verwerken. U accepteert de <a href="https://terms.html" target="_blank" style="color: #08306b; text-decoration: underline;">algemene voorwaarden</a>. TL;DR: We slaan uw bestanden of e-mailadres niet op en u kunt geen terugbetaling krijgen als u niet eerst test.</small>
     <div id="errorDisplay" style="color: red; margin-top: 10px;"></div>
 </form>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./TranscribeForMe - AI Transcriptiedienst_files/jquery-3.3.1.slim.min.js.downloaden"></script>
+<script src="./TranscribeForMe - AI Transcriptiedienst_files/popper.min.js.downloaden"></script>
+<script src="./TranscribeForMe - AI Transcriptiedienst_files/bootstrap.min.js.downloaden"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const backendUrl = "https://api.evertvannoort.ngrok.app";
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang') || 'en';
+
+    function updateLinks() {
+        const links = document.querySelectorAll('nav a, .btn-home');
+        links.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href.includes('?')) {
+                link.setAttribute('href', `${href}&lang=${lang}`);
+            } else {
+                link.setAttribute('href', `${href}?lang=${lang}`);
+            }
+        });
+    }
+
+    function loadLanguage(lang) {
+        fetch('lang.json')
+            .then(response => response.json())
+            .then(data => {
+                const strings = data[lang];
+                document.title = strings.title;
+                document.getElementById('pageTitle').textContent = strings.title;
+                document.getElementById('metaTitle').setAttribute('content', strings.title);
+                document.getElementById('metaDescription').setAttribute('content', strings.description);
+                document.getElementById('metaKeywords').setAttribute('content', strings.keywords);
+
+                // Update form content
+                document.getElementById('formTitle').textContent = strings.title;
+                document.getElementById('formDescription').textContent = strings.description;
+                document.getElementById('emailPlaceholder').setAttribute('placeholder', strings.email_placeholder);
+                document.getElementById('uploadButton').textContent = strings.upload;
+                document.getElementById('languageDetect').textContent = strings.language_detect;
+                document.getElementById('langDutch').textContent = strings.languages.dutch;
+                document.getElementById('langEnglish').textContent = strings.languages.english;
+                document.getElementById('langSpanish').textContent = strings.languages.spanish;
+                document.getElementById('langGerman').textContent = strings.languages.german;
+                document.getElementById('testTranscription').textContent = strings.test_transcription;
+                document.getElementById('submitButton').textContent = strings.submit;
+                document.getElementById('acceptTerms').innerHTML = `${strings.accept_terms} <a href="terms.html" target="_blank" style="color: #08306b; text-decoration: underline;" id="termsLink"> ${strings.menu.terms}</a>. ${strings.tldr}`;
+
+                // Update navigation menu text
+                document.getElementById('navHome').textContent = strings.menu.home;
+                document.getElementById('navAbout').textContent = strings.menu.about;
+                document.getElementById('navTerms').textContent = strings.menu.terms;
+            })
+            .catch(error => console.error('Error loading language file:', error));
+    }
+
+    updateLinks();
+    loadLanguage(lang);
+
     const uploadForm = document.getElementById('uploadForm');
     const submitButton = document.getElementById('submitButton');
     const errorDisplay = document.getElementById('errorDisplay');
