@@ -10,6 +10,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+/*    offset-position: top;*/
+/*    top: 100px;*/
 }
 
 nav {
@@ -36,6 +38,7 @@ form, .content, .wide-content {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px;
+    margin-top: 20px;
 }
 
 .wide-content {
@@ -57,7 +60,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 0.875em;
     text-align: left;
     color: #08306b;
     margin-bottom: 0px;
