@@ -20,7 +20,8 @@
         "menu": {
             "home": "Home",
             "about": "About Us",
-            "terms": "Terms and Conditions"
+            "terms": "Terms and Conditions",
+            "product": "What do I recieve"
         },
         "about": {
             "title": "About Us",
@@ -122,7 +123,8 @@
         "menu": {
             "home": "Home",
             "about": "Over ons",
-            "terms": "Algemene voorwaarden"
+            "terms": "Algemene voorwaarden",
+            "product": "Wat krijg ik?"
         },
         "about": {
             "title": "Over Ons",
@@ -224,7 +226,8 @@
         "menu": {
             "home": "Startseite",
             "about": "Über uns",
-            "terms": "AGB"
+            "terms": "AGB",
+            "product": "was bekomme ich?"
         },
         "about": {
             "title": "Über uns",

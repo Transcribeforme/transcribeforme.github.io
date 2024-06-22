@@ -24,6 +24,7 @@
     <a href="index.html" id="navHome">Home</a>
     <a href="about.html" id="navAbout">Over ons</a>
     <a href="terms.html" id="navTerms">Algemene voorwaarden</a>
+    <a href="product.zip" id="navProduct">Product</a>
 </nav>
 
 <form id="uploadForm" enctype="multipart/form-data" itemscope itemtype="http://schema.org/Service">
@@ -116,6 +117,7 @@
                     document.getElementById('navHome').textContent = strings.menu.home;
                     document.getElementById('navAbout').textContent = strings.menu.about;
                     document.getElementById('navTerms').textContent = strings.menu.terms;
+                    document.getElementById('navProduct').textContent = strings.menu.product;
                 })
                 .catch(error => console.error('Error loading language file:', error));
         }
